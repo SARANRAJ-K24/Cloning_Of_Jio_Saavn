@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup page</title>
+
+    <!----custom styling-->
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="/Images/Logo.png" width="30" height="30"></a>
+    </div>
+
+
+    <div class="leftHalf">
+        <div class="border_space">
+            <div class="container">
+                <h1>Welcome to JioSaavn.</h1>
+                <p>Sign up with your email address..</p>
+                <hr>
+
+                <form action="" method="POST">
+                    <label for="email"><b>Email</b></label>
+                    <%if (typeof(error)!='undefined') { %>
+                        <% if(error.length) { %>
+                            <p style="color: red;">
+                                <%= error[0] %>
+                            </p>
+                            <% } %>
+                                <% } %>0
+                                    <input type="text" placeholder="Email Address" name="email">
+
+
+                                    <label for="psw"><b>Password</b></label>
+                                    <!-- <%if (typeof(error)!='undefined') { %>
+                                        <% if(error.length) { %>
+                                            <p style="color: red;">
+                                                <%= error[1] %>
+                                            </p>
+                                            <% } %>
+                                                <% } %> -->
+                                    <input type="password" placeholder="Password" name="password">
+
+
+                                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                                    <%if (typeof(error)!='undefined') { %>
+                                        <% if(error.length) { %>
+                                            <p style="color: red;">
+                                                <%= error[1] %>
+                                            </p>
+                                            <% } %>
+                                                <% } %>
+                                                    <input type="password" placeholder="Repeat Password" name="passwordConfirmation">
+
+
+                                                    <label for="mobile number"><b>Mobile Number</b></label>
+                                                    <%if (typeof(error)!='undefined') { %>
+                                                        <% for (var i = 2; i < error.length; i++) { %>
+                                                            <p style="color: red;">
+                                                                <%= error[i] %>
+                                                            </p>
+                                                            <% } %>
+                                                                <% } %>
+                                                                    <input type="text" placeholder="mobile number" name="mobile_number">
+
+
+                                                                    <button type="submit">submit</button>
+                                                                    <a href="login"> Login</a>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

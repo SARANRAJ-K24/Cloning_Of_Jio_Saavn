@@ -1,0 +1,190 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #e7e3e3;
+    padding-left: 10%;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover a.active {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav input[type=text] {
+    float: left;
+    padding-left: 150px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a,
+    .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: right;
+}
+
+.dropbtn {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.logo {
+    padding-left: 20px;
+    float: left;
+    width: 10%;
+    color: red;
+}
+
+.dropdown {
+    position: relative;
+    float: right;
+    padding-right: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: gray;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.new-playing-btn {
+    width: 100px;
+    height: 50px;
+    border: 1px solid blue;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: grey;
+}
+
+.container {
+    position: relative;
+    padding-left: 12%;
+    padding-top: 2%;
+}
+
+.box {
+    position: absolute;
+    padding-left: 10%;
+    padding-top: 3%
+}
+
+.column {
+    float: left;
+    width: 9%;
+    padding: 12px;
+}
+
+.name {
+    width: 30%;
+    padding-top: 15px;
+}
+
+.radio-stations {
+    vertical-align: middle;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.card-text {
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.lists {
+    background-color: white;
+}
+
+.lists a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10% 20px;
+    text-decoration: none;
+    font-size: 17px;
+}

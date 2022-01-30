@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!----custom styling-->
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+
+    <!-- left side ---Login Page -->
+
+    <div class="split left">
+    </div>
+
+
+
+    <!-- right side ---Login Page  -->
+
+    <div class=""></div>
+
+
+    <div class="top">
+        Don't have a JioSaavn account yet?
+        <button class="button">signup</button>
+    </div>
+    <div class="centered">
+        <p class="h1" style="margin-bottom: 0">Welcome to JioSaavn.</p>
+        <p class="h6" style="margin-top: 0">Login in or sign up with your email address.</p>
+        <div>
+            <label><b><%= data %></b></label>
+            <input type="text" placeholder="Email Address" name="email" required> <br>
+        </div>
+        <!-- <label for="psw"><b></b></label> -->
+        <input type="password" placeholder="Password" name="password" required> <br>
+        <div class="row">
+            <input type="submit" value="Continue" style="color: white;">
+        </div>
+        <span class="forgotpassword"> <a href="forgotpassword" style="color: #2bc5b4;">Forgot password?</a></span><br><br>
+        <span class="privacyPolicy" style="color: #a9a9a9;"> By selecting ‘Continue’, you agree to JioSaavn’s <a href="forgotpassword" style="color: black;"> Terms of Service </a> and <br>
+            <a href="forgotpassword" style="color: black;">Privacy Policy.</a></span>
+
+        <p style="font-size: xx-small;color:gray;">-----------------------------------OR CONNECT WITH-------------------------------------</p>
+
+        <a href="mobileLogin"><input type="mobile" value="Mobile Number" style="color: white;font-weight: 600;"></a>
+        <input type="facebook" value="Facebook" style="color: white;font-weight: 600;">
+
+
+
+    </div>
+    </div>
+
+    <!-- <div class="logo ">
+        <button>
+            <a href="/home/saravanan/Desktop/Jio_Saavn/Html/login/login.html ">
+                <img src="/Images/Logo.png " width="30 " height="30 "></a>
+        </button>
+    </div>
+
+    <div>
+        <h2>Login</h2>
+
+        <div class="imgcontainer ">
+            <img src="/Images/General_Profile.png " alt="Avatar " class="avatar ">
+        </div>
+        <form action=" " method="POST ">
+            <%if (typeof(error)!='undefined') { %>
+                <% if(error.length) { %>
+                    <p style="color: red; ">
+                        <%= error[0] %>
+                    </p>
+                    <% } %>
+                        <% } %>
+                            <div class="container ">
+                                <div>
+                                    <label for="email "><b><%= data %></b></label>
+                                    <input type="text " placeholder="email id : (eg: xyz@gmail.com " name="email " required>
+                                </div>
+                                <label for="psw "><b>Password</b></label>
+                                <input type="password " placeholder="Enter Password " name="password " required>
+
+                                <button type="submit ">Login</button>
+                                <label>
+            <input type="checkbox " checked="checked " name="remember "> Remember me
+        </label>
+                            </div>
+
+                            <div class="container " style="background-color:#f1f1f1 ">
+                                <button type="button " class="cancelbtn ">Cancel</button>
+                                <span class="psw ">Forgot <a href="forgotpassword ">password?</a></span>
+                            </div>
+        </form>
+    </div> -->
+
+</body>
+
+</html>

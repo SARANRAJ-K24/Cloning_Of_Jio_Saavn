@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$--------------- TOP NAVIGATION------------ $$$$$$$$$$$$$$$$$$$$$ */
+
+.topnav {
+    height: 6%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: fixed;
+    padding-top: 0px;
+    border: whitesmoke;
+    border-style: solid;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover a.active {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav input[type=text] {
+    float: left;
+    margin-top: 6px;
+    border: none;
+    font-size: 18px;
+    border-radius: 30px;
+    padding: 9px 250px;
+    background-color: whitesmoke;
+}
+
+.logo {
+    float: left;
+    color: red;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: right;
+}
+
+.dropbtn {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 16px;
+    font-size: 13px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    float: right;
+    padding-right: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: gray;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.col-1 {
+    width: 8.33%;
+    float: left;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$------------- SIDE NAVIGATION ------------$$$$$$$$$$$$$$$ */
+
+.sidenav {
+    height: 100%;
+    width: 140px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: scroll;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: grey;
+}
+
+.library {
+    padding-left: 20px;
+    color: grey;
+}
+
+.heading1 {
+    text-decoration: black;
+    font-size: 350%;
+    padding-top: 4%;
+}
+
+.heading2 {
+    text-decoration: black;
+    font-size: 100%;
+    text-decoration: whitesmoke;
+    font-style: normal;
+}
+
+.container {
+    position: relative;
+    padding-left: 12%;
+}
